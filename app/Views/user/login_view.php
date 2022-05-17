@@ -34,9 +34,15 @@
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="<?php echo base_url("public/user/register"); ?>">
-                            Registrate
-                        </a>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Registrate
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="<?php echo base_url("public/teacher/register"); ?>">Como profesor</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url("public/student/register"); ?>">Como estudiante</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <br>
