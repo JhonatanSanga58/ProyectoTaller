@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" type="image/png" href="<?php echo base_url('sources/images/icon.png') ?>">
 	<link rel="stylesheet" href="<?php echo base_url('sources/css/header.css') ?>">
 	<link rel="stylesheet" href="<?php echo base_url('sources/css/footer.css') ?>">
+	<link rel="stylesheet" href="<?php echo base_url('sources/css/bootstrap.css') ?>">
 </head>
 
 <body>
@@ -20,12 +21,24 @@
 			<nav>
 				<ul class="links">
 					<li>
-						<a href="<?php echo base_url('public/dhbsadjkbashkdv') ?>">Descargar la aplicación</a>
+						<a class="download_app text-white" href="<?php echo base_url('public/dhbsadjkbashkdv') ?>">Descargar la aplicación</a>
 					</li>
 				</ul>
 			</nav>
-			<a class="init" href="<?php echo base_url('public/user/login') ?>">
-				<button>Iniciar sesión</button>
-			</a>
+			<?php
+			$session = session();
+			if ($session->has("role")) {
+			?>
+				<a class="init" href="<?php echo base_url('public/user/logout') ?>">
+					<button class="login">Cerrar sesión</button>
+				</a>
+			<?php
+			} else {
+			?>
+				<a class="init" href="<?php echo base_url('public/user/login') ?>">
+					<button class="login">Iniciar sesión</button>
+				</a>
+			<?php
+			} ?>
 		</header>
 	</div>

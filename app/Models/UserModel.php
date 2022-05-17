@@ -12,14 +12,14 @@ class UserModel extends Model
      * ---
      * Returns the data of the user with the given name and password
      * 
-     * @param string $user
+     * @param string $email
      * @param string $pswd no need to encrypt
      */
-    public function SelectLoginByName($user, $pswd)
+    public function SelectLoginByEmail($email, $pswd)
     {
         $builder = $this->db->table('user');
         $builder->select("*");
-        $builder->where('user_name', $user);
+        $builder->where('email', $email);
         $builder->where('password', md5($pswd));
         $query = $builder->get();
         return $query;
@@ -65,5 +65,22 @@ class UserModel extends Model
         ];
         $query = $builder->insert($data);
         return $query;
+    }
+    
+    /**
+     * ---
+     * Update
+     * ---
+     * Update the Verified state of a user to 1
+     * 
+     * @param int $teacher_id
+     * @param int $has_photo
+     */
+    public function UpdateVerified($user_id)
+    {
+        $builder = $this->db->table('user');
+        $builder->set('verified', 1);
+        $builder->where('user_id', $user_id);
+        return $builder->update();
     }
 }
