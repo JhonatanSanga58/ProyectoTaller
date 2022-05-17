@@ -42,21 +42,4 @@ class TeacherModel extends Model
         $query = $builder->insert($data);
         return $query;
     }
-    
-    /**
-     * ---
-     * Update
-     * ---
-     * Update the Verified state of a user to 1
-     * 
-     * @param int $teacher_id
-     * @param int $has_photo
-     */
-    public function UpdateVerified($user_id)
-    {
-        $builder = $this->db->table('user');
-        $builder->set('verified', 1);
-        $builder->where('user_id', $user_id);
-        return $builder->update();
-    }
 }

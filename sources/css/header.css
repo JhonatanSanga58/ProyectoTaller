@@ -9,7 +9,7 @@ header, header * {
     background-color: #1f5c80;
 }
 
-li, a, button {
+li, .download_app, .login {
     font-weight: 500;
     font-size: 16px;
     color: white;
@@ -48,7 +48,7 @@ header {
     transition: all 0.3s ease 0s;
 }
 
-button {
+.login {
     margin-left: 20px;
     padding: 9px 25px;
     background-color: #66b4b4;
@@ -58,6 +58,6 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.login:hover {
     background-color: #79BD9A;
 }
