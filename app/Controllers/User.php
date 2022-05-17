@@ -17,9 +17,16 @@ class User extends BaseController
 
     public function login()
     {
-        echo view('master/header');
-        echo view('user/login_view');
-        echo view('master/footer');
+        $session = session();
+
+        if (!$session->has('role')) {
+            echo view('master/header');
+            echo view('user/login_view');
+            echo view('master/footer');
+        } else {
+            $url = base_url('public/');
+            return redirect()->to($url);
+        }
     }
 
 
@@ -52,7 +59,7 @@ class User extends BaseController
                 return redirect()->to($url);
             }
         } else {
-            $url = base_url('public/departure');
+            $url = base_url('public/');
             return redirect()->to($url);
         }
     }
