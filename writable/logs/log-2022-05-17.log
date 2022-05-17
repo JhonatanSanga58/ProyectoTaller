@@ -1,0 +1,198 @@
+CRITICAL - 2022-05-17 00:12:31 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:07 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:07 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:08 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:08 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:08 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:48 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:48 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:58 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:13:59 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:14:21 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:14:29 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:15:10 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:15:12 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:15:35 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:16:04 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:16:06 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:16:30 --> Invalid file: public/index.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('public/index.ph...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('public/index.ph...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(22): view('public/index.ph...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->register()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:17:01 --> Invalid file: public/Index.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('public/Index.ph...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('public/Index', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(22): view('public/Index')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->register()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:17:08 --> Invalid file: public/Index.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('public/Index.ph...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('public/Index', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(22): view('public/Index')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->register()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:17:41 --> Invalid file: views/main_page.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/main_page...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('views/main_page', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(22): view('views/main_page')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->register()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-17 00:18:12 --> Invalid file: student_register.php
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('student_registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student_registe...', Array, true)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(10): view('student_registe...')
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
