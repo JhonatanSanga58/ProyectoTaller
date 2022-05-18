@@ -22,7 +22,7 @@ class TeacherModel extends Model
         $query = $builder->get();
         return $query;
     }
-    
+
     /**
      * ---
      * Insert
