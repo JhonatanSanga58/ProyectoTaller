@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="container">
-                            <form action="<?php echo base_url('public/user/login_validate') ?>" target="_self" method="post">
+                            <form action="<?php echo base_url('public/user/LoginValidate') ?>" target="_self" method="post">
                                 <div class="form-group">
                                     <label>Correo electrónico</label>
                                     <input type="email" class="form-control" name="email" required>
