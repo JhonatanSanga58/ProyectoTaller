@@ -1,0 +1,38 @@
+CRITICAL - 2022-05-18 00:00:39 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(45): CodeIgniter\Model->__call('select_next', Array)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-18 00:01:32 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(45): CodeIgniter\Model->__call('select_next', Array)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-18 00:03:00 --> Call to a member function getResult() on string
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-18 00:04:19 --> Undefined variable $UserId
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 00:04:44 --> Too few arguments to function App\Models\UserModel::InsertUser(), 6 passed in C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php on line 48 and exactly 7 expected
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(48): App\Models\UserModel->InsertUser('3', 'Juan2', 'Perez', 'Uwu', 's@gmail.com', '1')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

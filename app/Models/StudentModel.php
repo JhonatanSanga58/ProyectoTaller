@@ -32,7 +32,7 @@ class StudentModel extends Model
      * @param int $student_id
      * @param string $nick_name
      */
-    public function InsertTeacher($student_id, $nick_name)
+    public function InsertStudent($student_id, $nick_name)
     {
         $builder = $this->db->table('student');
         $data = [

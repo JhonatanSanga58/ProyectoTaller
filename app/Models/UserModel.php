@@ -75,7 +75,7 @@ class UserModel extends Model
      */
     public function InsertUser($user_id, $user_name, $user_first_surname, $user_second_surname, $email, $password, $confirm_key)
     {
-        $builder = $this->db->table('user');
+        $builder = $this->db->table('user'); 
         $data = [
             'user_id' => $user_id,
             'user_name' => $user_name,

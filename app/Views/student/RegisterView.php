@@ -13,36 +13,29 @@
                         	<form action="<?php echo base_url('public/student/registerModel')?>" target="_self" method="post">
 								<div>
 									<div class="row">
-										<div class="col-md-12">
+										<div class="col-md-6">
 											<div class="form-group">
 												<label class="lbl">Nombres</label>
-												<input type="txt" name="names" id="names" class="form-control" required>
+												<input type="txt" name="Names" id="Names" class="form-control" required>
 											</div>
 										</div>
-									</div>
-									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Primer apellido</label>
-												<input type="txt" name="firstLastName" id="firstLastName" class="form-control" required>
+												<input type="txt" name="FirstLastSurame" id="FirstLastSurame" class="form-control" required>
 											</div>
-										</div>
-										<div class="col-md-6">
-											<label>Segundo apellido</label>
-											<input type="txt" name="secondLastName" id="secondLastName" class="form-control">
 										</div>
 									</div>
 									<div class="row">
+										
 										<div class="col-md-6">
-											<div class="form-group">
-												<label>Usuario</label>
-												<input type="txt" name="userName" id="userName" class="form-control" required>
-											</div>
+											<label>Segundo apellido</label>
+											<input type="txt" name="SecondLastSurname" id="SecondLastSurname" class="form-control">
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Nombre de usuario</label>
-												<input type="txt" name="nickName" id="nickName" class="form-control" required>
+												<input type="txt" name="NickName" id="NickName" class="form-control" required>
 											</div>
 										</div>
 									</div>
@@ -50,13 +43,13 @@
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Contraseña</label>
-												<input type="password" name="password" id="password" class="form-control" required>
+												<input type="password" name="Password" id="Password" class="form-control" required>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Repetir contraseña</label>
-												<input type="password" name="repeatPassword" id="repeatPassword" class="form-control" required>
+												<input type="password" name="RepeatPassword" id="RepeatPassword" class="form-control" required>
 											</div>
 										</div>
 									</div>
@@ -64,7 +57,7 @@
 										<div class="col-md-12">
 											<div class="form-group">
 												<label>Correo electronico</label>
-												<input type="email" name="email" id="email" class="form-control" required>
+												<input type="email" name="Email" id="Email" class="form-control" required>
 											</div>
 										</div>
 									</div>
