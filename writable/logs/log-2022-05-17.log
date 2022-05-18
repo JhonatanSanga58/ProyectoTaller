@@ -196,3 +196,250 @@ CRITICAL - 2022-05-17 00:18:12 --> Invalid file: student_register.php
 #5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+CRITICAL - 2022-05-17 22:19:22 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:19:22 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:20:44 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:20:45 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:20:45 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:20:46 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:20:46 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:20:46 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:21:14 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:21:34 --> syntax error, unexpected token "}"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student/registe...')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student/registe...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:23:11 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:29:37 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:29:38 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:29:43 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:23 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:24 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:24 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:24 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:24 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:25 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:25 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:25 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:25 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:25 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:25 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:32:26 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:34:59 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:42:16 --> Class "App\Controllers\UserModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:44:10 --> Class "App\Controllers\StudentModel" not found
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:49:42 --> Undefined property: stdClass::$user_id
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 51)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:51:31 --> Undefined property: stdClass::$user_id
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:54:51 --> Undefined property: stdClass::$user_id
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 22:56:12 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:56:24 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:56:34 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:56:45 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:57:13 --> Unsupported operand types: string + CodeIgniter\Database\MySQLi\Result
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:57:24 --> Unsupported operand types: string + CodeIgniter\Database\MySQLi\Result
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-17 22:59:41 --> Unsupported operand types: string + string
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
