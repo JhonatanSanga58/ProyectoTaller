@@ -24,19 +24,39 @@ class UserModel extends Model
         $query = $builder->get();
         return $query;
     }
-    
+
     /**
      * ---
      * Select
      * ---
      * Returns the next id
+     * @return int
      */
-    public function select_next()
+    public function SelectNext()
     {
         $builder = $this->db->table('user');
         $builder->select("IFNULL(MAX(user_id) + 1, 1) AS next");
         $query = $builder->get();
-        return $query;
+        $res = 0;
+        foreach ($query->getResult() as $row) {
+            $res = $row->next;
+        }
+        return $res;
+    }
+
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns an email if exists
+     */
+    public function EmailExists($email)
+    {
+        $builder = $this->db->table('user');
+        $builder->select("email");
+        $builder->where("email", $email);
+        $query = $builder->get();
+        return $query->getResult();
     }
 
     /**
@@ -51,8 +71,9 @@ class UserModel extends Model
      * @param string $user_second_surname
      * @param string $email
      * @param string $password no need to encrypt
+     * @param string $confirm_key encrypt first
      */
-    public function InsertUser($user_id, $user_name, $user_first_surname, $user_second_surname, $email, $password)
+    public function InsertUser($user_id, $user_name, $user_first_surname, $user_second_surname, $email, $password, $confirm_key)
     {
         $builder = $this->db->table('user'); 
         $data = [
@@ -61,26 +82,26 @@ class UserModel extends Model
             'user_first_surname' => $user_first_surname,
             'user_second_surname' => $user_second_surname,
             'email' => $email,
-            'password' => md5($password)
+            'password' => md5($password),
+            'confirm_key' => $confirm_key
         ];
         $query = $builder->insert($data);
         return $query;
     }
-    
+
     /**
      * ---
      * Update
      * ---
-     * Update the Verified state of a user to 1
+     * Update the Verified state of a user with a key to 1
      * 
-     * @param int $teacher_id
-     * @param int $has_photo
+     * @param int $key
      */
-    public function UpdateVerified($user_id)
+    public function UpdateVerified($key)
     {
         $builder = $this->db->table('user');
         $builder->set('verified', 1);
-        $builder->where('user_id', $user_id);
+        $builder->where('confirm_key', $key);
         return $builder->update();
     }
 }
