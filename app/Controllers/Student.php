@@ -9,7 +9,7 @@ class Student extends BaseController
     public function index()
     {
         echo view('master/header');
-        echo view('student/student_register');
+        echo view('student/RegisterView');
         echo view('master/footer');
     }
     public function register()
@@ -19,7 +19,7 @@ class Student extends BaseController
         if (!$session->has('role')) 
         {
         	echo view('master/header');
-            echo view('student/student_register');
+            echo view('student/RegisterView');
             echo view('master/footer');
         }
         else 
@@ -42,16 +42,12 @@ class Student extends BaseController
         $StudentModel = new StudentModel();
 
         $UserModel = new UserModel();
-        $data = $UserModel->select_next();
-        $UserId;
-        if ($data->getResult()) 
-        {
-            foreach ($data->getResult() as $row) 
-            {
-                 $UserId = $row->next;
-            }
-        }
-        $UserModel->InsertUser($UserId, $Names, $FirstLastSurame, $SecondLastSurname, $Email, $Password);
+
+        $UserId = $UserModel->SelectNext();
+        $number = random_int(1000000, 9999999);
+        $key = md5($number);
+
+        $UserModel->InsertUser($UserId, $Names, $FirstLastSurame, $SecondLastSurname, $Email, $Password, $key);
         $StudentModel->InsertStudent($UserId, $NickName);
         $url = base_url('public/');
         return redirect()->to($url,1);
