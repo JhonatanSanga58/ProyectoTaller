@@ -95,4 +95,11 @@ class User extends BaseController
         echo view('master/footer');
         echo $key;
     }
+    public function Forget()
+    {
+
+        echo view('master/header');
+        echo view('user/RecoverPassword');
+        echo view('master/footer');
+    }
 }

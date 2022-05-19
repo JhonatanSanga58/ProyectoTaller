@@ -16,13 +16,13 @@
 										<div class="col-md-6">
 											<div class="form-group">
 												<label class="lbl">Nombres</label>
-												<input type="txt" name="Names" id="Names" class="form-control" required>
+												<input type="txt" name="Names" id="Names" class="form-control" pattern="^[a-z A-Z]+$" required >
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Primer apellido</label>
-												<input type="txt" name="FirstLastSurame" id="FirstLastSurame" class="form-control" required>
+												<input type="txt" name="FirstLastSurame" id="FirstLastSurame" class="form-control" pattern="^[a-z A-Z]+$" required>
 											</div>
 										</div>
 									</div>
@@ -30,12 +30,12 @@
 										
 										<div class="col-md-6">
 											<label>Segundo apellido</label>
-											<input type="txt" name="SecondLastSurname" id="SecondLastSurname" class="form-control">
+											<input type="txt" name="SecondLastSurname" id="SecondLastSurname" class="form-control" pattern="^[a-z A-Z]+$">
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Nombre de usuario</label>
-												<input type="txt" name="NickName" id="NickName" class="form-control" required>
+												<input type="txt" name="NickName" id="NickName" class="form-control" pattern="^[a-z A-Z]+$" required>
 											</div>
 										</div>
 									</div>
@@ -43,13 +43,13 @@
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Contraseña</label>
-												<input type="password" name="Password" id="Password" class="form-control" required>
+												<input type="password" name="Password" id="Password" class="form-control" minlength="8" required>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Repetir contraseña</label>
-												<input type="password" name="RepeatPassword" id="RepeatPassword" class="form-control" required>
+												<input type="password" name="RepeatPassword" id="RepeatPassword" class="form-control" minlength="8" required>
 											</div>
 										</div>
 									</div>
@@ -75,7 +75,7 @@
 							let message = '<?php echo $message ?>';
 							if(message == '0')
 							{
-								swal('ERROR','Error inesperado intentelo denuevo.','error');
+								swal('ERROR','Error inesperado intentelo denuevo ','error');
 							}
 							if(message == '1')
 							{

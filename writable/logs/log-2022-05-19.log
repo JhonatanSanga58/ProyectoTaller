@@ -1,0 +1,43 @@
+ERROR - 2022-05-19 00:32:44 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-05-19 00:32:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `email`\n...', Array, false)
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\app\Models\UserModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Teacher.php(54): App\Models\UserModel->EmailExists('jhas20010520@gm...')
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Teacher->RegisterInsert()
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Teacher))
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-05-19 00:33:20 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-05-19 00:36:55 --> Email: sendWithMail throwed mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+ERROR - 2022-05-19 00:42:49 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-05-19 00:45:27 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-05-19 00:49:41 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+ERROR - 2022-05-19 00:54:54 --> Email: sendWithSmtp throwed fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number
+CRITICAL - 2022-05-19 02:42:38 --> Undefined variable $email
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 69)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 02:43:39 --> Undefined variable $email
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 70)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 03:09:51 --> Undefined variable $key
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\User.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 104)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\User->Forget()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

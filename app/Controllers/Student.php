@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\StudentModel;
+use CodeIgniter\Email\Email;
 
 class Student extends BaseController
 {
@@ -60,6 +61,26 @@ class Student extends BaseController
                 $Response = $StudentModel->InsertStudent($UserId, $NickName);
                 if ($Response > 0 )
                 {
+                    /*LOGICA PARA ENVIAR CORREO USANDO EL $key
+                    el correo redirigirá a /public/user/activation/daas34d7as34d5asdasd4as4d5sa6d4as
+                    */
+    
+                    $mail = \Config\Services::email();
+                    $mail->setFrom('autotestproy@gmail.com');
+                    $mail->setTo($Email);
+                    $mail->setSubject('Activación de correo');
+                    $mail->setMessage("
+                    <h1>Gracias por registrarse en Autotest</h1>
+                    <p>haga click en Activar para poder usar su cuenta</p>
+                    <br>           
+                    <a href='http://localhost/autotest/ProyectoTaller/public/user/activation/" . $key . "'>
+                    <button>Activar</button>
+                    </a>");
+                    /*if (mail('tanjhosan58@gmail.com', 'sub', 'mensaje', 'autotestproy@gmail.com'))
+                        echo "si";
+                    else
+                        echo "no";*/
+                    $mail->send();
                     $url = base_url('public/student/register');
                     return redirect()->to($url)->with('message','1');
                 }
