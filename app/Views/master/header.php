@@ -15,6 +15,7 @@
 -->
 	<link rel="stylesheet" href="<?php echo base_url('sources/css/bootstrap.css') ?>">
 	<script src="<?php echo base_url('sources/js/bootstrap.bundle.min.js') ?>"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>

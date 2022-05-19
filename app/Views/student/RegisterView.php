@@ -70,6 +70,22 @@
 									<br><br>
 								</div>
 							</form>
+							
+						<script type="text/javascript"> 
+							let message = '<?php echo $message ?>';
+							if(message == '0')
+							{
+								swal('ERROR','Error inesperado intentelo denuevo.','error');
+							}
+							if(message == '1')
+							{
+								swal('EXITO','Registrado con exito, se envio un mensaje de confirmacion a su correo.','success');
+							}
+							if(message == '2')
+							{
+								swal('ERROR','El email insertado ya esta en uso','error');
+							}
+						</script>
                         </div>
                     </div>
                 </div>
