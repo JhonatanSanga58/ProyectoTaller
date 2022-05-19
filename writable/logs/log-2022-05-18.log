@@ -36,3 +36,97 @@ CRITICAL - 2022-05-18 00:04:44 --> Too few arguments to function App\Models\User
 #3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-05-18 21:59:21 --> syntax error, unexpected token "if"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 22:00:21 --> syntax error, unexpected token "echo"
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('student')
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('student')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 22:01:09 --> Undefined variable $message
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Views\student\RegisterView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student/Registe...', Array, true)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(12): view('student/Registe...')
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#7 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:02:21 --> Undefined variable $message
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Views\student\RegisterView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student/Registe...', Array, true)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(12): view('student/Registe...')
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#7 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:02:32 --> Undefined variable $Message
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Views\student\RegisterView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student/Registe...', Array, true)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(12): view('student/Registe...')
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#7 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:04:58 --> Undefined variable $Message
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Views\student\RegisterView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student/Registe...', Array, true)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(12): view('student/Registe...')
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#7 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:04:59 --> Undefined variable $Message
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Views\student\RegisterView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student/Registe...', Array, true)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(12): view('student/Registe...')
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#7 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:05:39 --> Undefined variable $message
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Views\student\RegisterView.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\Common.php(1089): CodeIgniter\View\View->render('student/Registe...', Array, true)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(12): view('student/Registe...')
+#5 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->index()
+#6 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#7 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:09:34 --> Undefined variable $userModel
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-18 22:10:29 --> Undefined variable $email
+#0 C:\xampp\htdocs\autotest\ProyectoTaller\app\Controllers\Student.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(832): App\Controllers\Student->registerModel()
+#2 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Student))
+#3 C:\xampp\htdocs\autotest\ProyectoTaller\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\autotest\ProyectoTaller\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
