@@ -25,34 +25,21 @@ class ParallelModel extends Model
         return $query->getResult();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
     /**
      * ---
      * Insert
      * ---
-     * Insert a new grade
+     * Insert a new parallel into a grade
      * 
-     * @param string $gradeName
-     * @param int $teacherid
+     * @param string $name
+     * @param int $gradeId
      */
-    public function InsertGrade($gradeName, $teacherId)
+    public function InsertParallel($name, $gradeId)
     {
-        $builder = $this->db->table('grade');
+        $builder = $this->db->table('parallel');
         $data = [
-            'grade_name' => $gradeName,
-            'teacher_id' => $teacherId,
+            'name' => $name,
+            'grade_id' => $gradeId,
         ];
         $query = $builder->insert($data);
         return $query;
@@ -62,15 +49,15 @@ class ParallelModel extends Model
      * ---
      * Update
      * ---
-     * Changes the state to 0 for a grade
+     * Changes the state to 0 for a parallel
      * 
-     * @param int $teacherid
+     * @param int $parallelid
      */
-    public function UnableGrade($gradeId)
+    public function UnableParallel($parallelId)
     {
-        $builder = $this->db->table('grade');
+        $builder = $this->db->table('parallel');
         $builder->set('state', 0);
-        $builder->where('grade_id', $gradeId);
+        $builder->where('parallel_id', $parallelId);
         return $builder->update();
     }
 
@@ -78,16 +65,17 @@ class ParallelModel extends Model
      * ---
      * Update
      * ---
-     * Changes the name for a grade
-     * Changes the name for a grade
+     * Changes the name for a Parallel
+     * Changes the name for a Parallel
      * 
-     * @param int $teacherid
+     * @param int $id
+     * @param string $name
      */
-    public function UpdateGrade($gradeId, $gradeName)
+    public function UpdateParallel($id, $name)
     {
-        $builder = $this->db->table('grade');
-        $builder->set('grade_name', $gradeName);
-        $builder->where('grade_id', $gradeId);
+        $builder = $this->db->table('parallel');
+        $builder->set('name', $name);
+        $builder->where('parallel_id', $id);
         return $builder->update();
     }
 }

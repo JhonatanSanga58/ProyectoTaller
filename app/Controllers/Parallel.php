@@ -6,7 +6,7 @@ use App\Models\GradeModel;
 use App\Models\ParallelModel;
 use Config\App;
 
-class Grade extends BaseController
+class Parallel extends BaseController
 {
     public function index()
     {
@@ -37,14 +37,14 @@ class Grade extends BaseController
         }
     }
 
-    public function UpdateGrade()
+    public function UpdateParallel()
     {
         $session = session();
         if ($session->has('role') && $session->get('role') == '1') {
-            $gradeModel = new GradeModel();
+            $parallelModel = new ParallelModel();
             $name = $this->request->getPost('name');
             $id = $this->request->getPost('val');
-            $gradeModel->UpdateGrade($id, $name);
+            $parallelModel->UpdateParallel($id, $name);
             $url = base_url('public/grade');
             return redirect()->to($url);
         } else {
@@ -53,30 +53,13 @@ class Grade extends BaseController
         }
     }
 
-    public function DeleteGrade()
+    public function DeleteParallel()
     {
         $session = session();
         if ($session->has('role') && $session->get('role') == '1') {
-            $gradeModel = new GradeModel();
-            $name = $this->request->getPost('name');
+            $parallelModel = new ParallelModel();
             $id = $this->request->getPost('val');
-            $gradeModel->UnableGrade($id);
-            $url = base_url('public/grade');
-            return redirect()->to($url);
-        } else {
-            $url = base_url('public/');
-            return redirect()->to($url);
-        }
-    }
-
-    public function InsertGrade()
-    {
-        $session = session();
-        if ($session->has('role') && $session->get('role') == '1') {
-            $gradeModel = new GradeModel();
-            $name = $this->request->getPost('name');
-            $id = $session->get('role');
-            $gradeModel->InsertGrade($name, $id);
+            $parallelModel->UnableParallel($id);
             $url = base_url('public/grade');
             return redirect()->to($url);
         } else {
