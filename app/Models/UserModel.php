@@ -104,4 +104,31 @@ class UserModel extends Model
         $builder->where('confirm_key', $key);
         return $builder->update();
     }
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns an key email confirmation key
+     * 
+     *  @param string $email
+     */
+    public function KeyConfirmation($email)
+    {
+        $builder = $this->db->table('user');
+        $builder->select("confirm_key");
+        $builder->where("email", $email);
+        $query = $builder->get();
+        $res = 0;
+        foreach ($query->getResult() as $row) {
+            $res = $row->confirm_key;
+        }
+        return $res;
+    }
+    public function UpdatePassword($key,$password)
+    {
+        $builder = $this->db->table('user');
+        $builder->set('password', md5($password));
+        $builder->where('confirm_key', $key);
+        return $builder->update();
+    }
 }
