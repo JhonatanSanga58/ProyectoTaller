@@ -29,7 +29,10 @@
                 <br>
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="<?php echo base_url("public/user/forget"); ?>">
+                        <button class="btn btn-sucess" data-bs-toggle="modal" data-bs-target="#emailModal">
+                            ¿Olvidaste tu contraseña?
+                        </button>
+                        <a data-bs-toggle="modal" data-bs-target="#emailModal">
                             ¿Olvidaste tu contraseña?
                         </a>
                     </div>
@@ -51,4 +54,36 @@
         <div class="col-md-3"></div>
     </div>
     <br><br>
+    <div class="modal" id="emailModal" tabindex="-1" role="dialog" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Recuperar contraseña</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="<?php echo base_url('public/user/SendMailForRecover') ?>" target="_self" method="post">
+                        <label>Ingrese su correo</label>
+                        <br>
+                        <input type="email" name="Email" id="Email" class="form-control" required>
+                        <button type="submit" class="btn btn-primary" >Siguiente</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript"> 
+		let messageReport = '<?php echo $messageReport ?>';
+		if(messageReport == '0')
+		{
+			swal('ERROR','El correo que ingreso no existe','error');
+		}
+        if(messageReport == '1')
+		{
+			swal('EXITO','Se envio un mensaje a su correo electronico por favor reviselo para poer continuar con la recuperacion de su contraseña','success');
+		}
+	</script>
 </div>
