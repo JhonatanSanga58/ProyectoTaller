@@ -61,7 +61,7 @@ class User extends BaseController
                             $session->set('role', 2);
                     }
                 }
-                $url = base_url('public/home');
+                $url = base_url('public/grade');
                 return redirect()->to($url);
             } else {
                 $url = base_url('public/user/login');
@@ -91,7 +91,7 @@ class User extends BaseController
     public function Activation($key)
     {
         //echo $key;
-        $userModel =new UserModel();
+        $userModel = new UserModel();
         $userModel->UpdateVerified($key);
         echo view('master/header');
         echo view('user/ActivationMessage');
