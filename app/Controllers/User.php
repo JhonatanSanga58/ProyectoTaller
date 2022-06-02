@@ -81,22 +81,13 @@ class User extends BaseController
         return redirect()->to($url);
     }
 
-    public function ConfirmMessage()
-    {
-        echo view('master/header');
-        echo view('user/ConfirmMessage');
-        echo view('master/footer');
-    }
-
     public function Activation($key)
     {
         //echo $key;
         $userModel = new UserModel();
         $userModel->UpdateVerified($key);
-        echo view('master/header');
-        echo view('user/ActivationMessage');
-        echo view('master/footer');
-        echo $key;
+        $url = base_url('public/user/login');
+        return redirect()->to($url)->with('messageReport','3');
     }
     public function SendMailForRecover()
     {
@@ -108,12 +99,8 @@ class User extends BaseController
         if ($userModel->EmailExists($email))
         {
             $key = $userModel->KeyConfirmation($email);
-            /*
-            LOGICA PARA ENVIAR CORREO USANDO EL $key
-            el correo redirigirá a /public/user/activation/daas34d7as34d5asdasd4as4d5sa6d4as
-            */
 
-             $mail = \Config\Services::email();
+            $mail = \Config\Services::email();
             $mail->setFrom('autotestproy@gmail.com');
             $mail->setTo($email);
             $mail->setSubject('Recuperar contraseña');
@@ -124,10 +111,6 @@ class User extends BaseController
             <a href='http://localhost/autotest/ProyectoTaller/public/user/recoverPassword/" . $key . "'>
             <button>Recuperar</button>
             </a>");
-            /*if (mail('tanjhosan58@gmail.com', 'sub', 'mensaje', 'autotestproy@gmail.com'))
-                echo "si";
-            else
-                echo "no";*/
             $mail->send();
             return redirect()->to($url)->with('messageReport','1');
         }
@@ -152,14 +135,13 @@ class User extends BaseController
         $key = $this->request->getPost('key');
         $password = $this->request->getPost('password');
         $repeatPassword = $this->request->getPost('repeatPassword');
-
+        $url = base_url('public/user/login');
         if($password==$repeatPassword)
         {
             $userModel =new UserModel();
             $userModel->UpdatePassword($key,$password);
-            echo view('master/header');
-            echo view('MainPage');
-            echo view('master/footer');
+
+            return redirect()->to($url)->with('messageReport','2');
         }
         else
         {
