@@ -29,10 +29,10 @@
                 <br>
                 <div class="row">
                     <div class="col-md-6">
-                        <button class="btn btn-sucess" data-bs-toggle="modal" data-bs-target="#emailModal">
+                        <!--<button class="btn btn-sucess" data-bs-toggle="modal" data-bs-target="#emailModal">
                             ¿Olvidaste tu contraseña?
-                        </button>
-                        <a data-bs-toggle="modal" data-bs-target="#emailModal">
+                        </button>-->
+                        <a data-bs-toggle="modal" data-bs-target="#emailModal" class="text-blue" style="cursor:pointer;">
                             ¿Olvidaste tu contraseña?
                         </a>
                     </div>
@@ -83,7 +83,15 @@
 		}
         if(messageReport == '1')
 		{
-			swal('EXITO','Se envio un mensaje a su correo electronico por favor reviselo para poer continuar con la recuperacion de su contraseña','success');
+			swal('REGISTRO CON EXITO','Se envio un mensaje a su correo electronico por favor reviselo para poder continuar con la recuperacion de su contraseña','success');
+		}
+        if(messageReport == '2')
+		{
+			swal('EXITO AL CAMBIAR SU CONTRASEÑA','Su contraseña se cambio exitosamente','success');
+		}
+        if(messageReport == '3')
+		{
+			swal('ACTIVACION CON EXITO','Gracias por registrarse ya puede usar el sistema','success');
 		}
 	</script>
 </div>

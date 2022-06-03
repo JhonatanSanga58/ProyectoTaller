@@ -25,10 +25,14 @@ class Teacher extends BaseController
     public function Register()
     {
         $session = session();
+        $messageReport = session('messageReport');
 
         if (!$session->has('role')) {
+            $data = [
+                "messageReport" => $messageReport
+            ];
             echo view('master/header');
-            echo view('teacher/RegisterView');
+            echo view('teacher/RegisterView', $data); 
             echo view('master/footer');
         } else {
             $url = base_url('public/');
@@ -108,6 +112,9 @@ class Teacher extends BaseController
 
                 $userModel->InsertUser($id, $names, $firstLastName, $secondLastName, $email, $password, $key);
                 $teacherModel->InsertTeacher($id, $hasPhoto);
+                $url = base_url('public/teacher/register');
+                return redirect()->to($url)->with('messageReport','1');
+
             } else {
                 $url = base_url('public/teacher/register');
                 return redirect()->to($url);

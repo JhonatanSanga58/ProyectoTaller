@@ -2,3 +2,5 @@
 writable/
 #ignore database credential changes
 app/Config/Database.php
+#ignore created images
+sources/images/

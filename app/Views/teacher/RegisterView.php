@@ -107,3 +107,15 @@
         readFile(e.srcElement);
     }
 </script>
+<script type="text/javascript">
+    let messageReport = '<?php echo $messageReport ?>';
+    if (messageReport == '0') {
+        swal('ERROR', 'Error inesperado intentelo denuevo ', 'error');
+    }
+    if (messageReport == '1') {
+        swal('EXITO', 'Registrado con exito, se envio un mensaje de confirmacion a su correo.', 'success');
+    }
+    if (messageReport == '2') {
+        swal('ERROR', 'El email insertado ya esta en uso', 'error');
+    }
+</script>
