@@ -52,7 +52,7 @@
                                                 <p class="dropdown-item" onclick="display('g<?php echo $row['id']; ?>')">Editar</p>
                                             </li>
                                             <li>
-                                                <p class="dropdown-item" onclick="display('g<?php echo $row['id']; ?>')">Eliminar</p>
+                                                <p class="dropdown-item" onclick="display('g<?php echo $row['id']; ?>')" data-bs-toggle="modal" data-bs-target="#confirmationDelete">Eliminar</p>
                                             </li>
                                         </ul>
                                     </div>
@@ -134,3 +134,19 @@
         }
     }
 </script>
+<div class="modal" id="confirmationDelete" tabindex="-1" role="dialog" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>ESTA SEGURO DE ELIMINAR ESTE CURSO</h5>
+                </div>
+                <div class="modal-body">
+                    <!-- AQUI TU FORM ACTION Y TU BOTON DE CONFIRMACION-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>

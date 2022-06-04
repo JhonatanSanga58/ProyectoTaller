@@ -61,8 +61,17 @@ class User extends BaseController
                             $session->set('role', 2);
                     }
                 }
-                $url = base_url('public/grade');
-                return redirect()->to($url);
+                if($session->get('role') == '1')
+                {
+                    $url = base_url('public/grade');
+                    return redirect()->to($url);
+                }
+                else
+                {
+                    $url = base_url('public/');
+                    return redirect()->to($url);
+                }
+                
             } else {
                 $url = base_url('public/user/login');
                 return redirect()->to($url);
