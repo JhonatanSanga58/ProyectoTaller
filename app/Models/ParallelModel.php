@@ -20,7 +20,7 @@ class ParallelModel extends Model
         $builder->select("*");
         $builder->where('grade_id', $id);
         $builder->where('state', 1);
-        $builder->orderBy('create_date','desc');
+        $builder->orderBy('create_date','asc');
         $query = $builder->get();
         return $query->getResult();
     }

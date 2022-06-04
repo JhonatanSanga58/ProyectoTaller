@@ -52,14 +52,14 @@
                                                 <p class="dropdown-item" onclick="display('g<?php echo $row['id']; ?>')">Editar</p>
                                             </li>
                                             <li>
-                                                <p class="dropdown-item" onclick="display('g<?php echo $row['id']; ?>')" data-bs-toggle="modal" data-bs-target="#confirmationDelete">Eliminar</p>
+                                                <p class="dropdown-item" onclick="changeVal('g', '<?php echo $row['id']; ?>')" data-bs-toggle="modal" data-bs-target="#confirmationDelete">Eliminar</p>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </td>
                             <!--<td>
-                                <form action="<?php echo base_url('/public/grade/DeleteGrade'); ?>" method="POST" target="_self">
+                                <form action="" method="POST" target="_self">
                                     <input type="hidden" value="<?php echo $row['id']; ?>" name="val">
                                     <button type="submit" class="btn btn-danger">
                                         Eliminar
@@ -95,20 +95,12 @@
                                                     <p class="dropdown-item" onclick="display('p<?php echo $parallel->parallel_id; ?>')">Editar</p>
                                                 </li>
                                                 <li>
-                                                    <p class="dropdown-item" onclick="display('p<?php echo $parallel->parallel_id; ?>')">Eliminar</p>
+                                                    <p class="dropdown-item" onclick="changeVal('p', '<?php echo $parallel->parallel_id; ?>')" data-bs-toggle="modal" data-bs-target="#confirmationDelete">Eliminar</p>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </td>
-                                <!--<td>
-                                    <form action="<?php echo base_url('/public/parallel/DeleteParallel'); ?>" method="POST" target="_self">
-                                        <input type="hidden" value="<?php echo $parallel->parallel_id; ?>" name="val">
-                                        <button type="submit" class="btn btn-danger">
-                                            Eliminar
-                                        </button>
-                                    </form>
-                                </td>-->
                             </tr>
                         <?php
                         } ?>
@@ -133,20 +125,34 @@
             txt.style.display = "block";
         }
     }
+
+    function changeVal(mode, id) {
+        if (mode == "g")
+            document.getElementById("deleteform").action = "<?php echo base_url('/public/grade/DeleteGrade'); ?>";
+        else
+            document.getElementById("deleteform").action = "<?php echo base_url('/public/parallel/DeleteParallel'); ?>";
+        document.getElementById("valId").value = id;
+    }
 </script>
+
 <div class="modal" id="confirmationDelete" tabindex="-1" role="dialog" data-bs-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5>ESTA SEGURO DE ELIMINAR ESTE CURSO</h5>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>¿ESTÁ SEGURO DE ELIMINARLO?</h5>
+            </div>
+            <form id="deleteform" action="" method="POST" target="_self">
+                <div class="modal-body d-flex justify-content-center">
+                    <input type="hidden" id="valId" value="0" name="val">
+                    <button type="submit" class="btn btn-danger">
+                        Eliminar
+                    </button>
                 </div>
-                <div class="modal-body">
-                    <!-- AQUI TU FORM ACTION Y TU BOTON DE CONFIRMACION-->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    
-                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
             </div>
         </div>
     </div>
+</div>
