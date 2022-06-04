@@ -20,8 +20,7 @@
                 <thead>
                     <tr>
                         <th scope="col">Nombre</th>
-                        <th scope="col">Editar</th>
-                        <th scope="col">Eliminar</th>
+                        <th scope="col" class="d-flex justify-content-center">Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,20 +41,31 @@
                                     </button>
                                 </form>
                             </td>
-                            <td>
-                                <button class="btn btn-success" onclick="display('g<?php echo $row['id']; ?>')">
-                                <i class="bi bi-gear-wide"></i>    
-                                Editar
-                                </button>
+                            <td class="text-right">
+                                <div class="d-flex justify-content-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            ...
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <p class="dropdown-item" onclick="display('g<?php echo $row['id']; ?>')">Editar</p>
+                                            </li>
+                                            <li>
+                                                <p class="dropdown-item" onclick="display('g<?php echo $row['id']; ?>')">Eliminar</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </td>
-                            <td>
+                            <!--<td>
                                 <form action="<?php echo base_url('/public/grade/DeleteGrade'); ?>" method="POST" target="_self">
                                     <input type="hidden" value="<?php echo $row['id']; ?>" name="val">
                                     <button type="submit" class="btn btn-danger">
                                         Eliminar
                                     </button>
                                 </form>
-                            </td>
+                            </td>-->
                         </tr>
                         <?php
                         foreach ($row['parallels'] as $parallel) {
@@ -74,19 +84,31 @@
                                         </button>
                                     </form>
                                 </td>
-                                <td>
-                                    <button class="btn btn-success" onclick="display('p<?php echo $parallel->parallel_id; ?>')">
-                                        Editar
-                                    </button>
+                                <td class="text-right">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                ...
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <p class="dropdown-item" onclick="display('p<?php echo $parallel->parallel_id; ?>')">Editar</p>
+                                                </li>
+                                                <li>
+                                                    <p class="dropdown-item" onclick="display('p<?php echo $parallel->parallel_id; ?>')">Eliminar</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </td>
-                                <td>
+                                <!--<td>
                                     <form action="<?php echo base_url('/public/parallel/DeleteParallel'); ?>" method="POST" target="_self">
                                         <input type="hidden" value="<?php echo $parallel->parallel_id; ?>" name="val">
                                         <button type="submit" class="btn btn-danger">
                                             Eliminar
                                         </button>
                                     </form>
-                                </td>
+                                </td>-->
                             </tr>
                         <?php
                         } ?>
