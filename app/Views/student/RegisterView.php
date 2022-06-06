@@ -72,16 +72,16 @@
 							</form>
 							
 						<script type="text/javascript"> 
-							let message = '<?php echo $message ?>';
-							if(message == '0')
+							let messageReport = '<?php echo $messageReport ?>';
+							if(messageReport == '0')
 							{
 								swal('ERROR','Error inesperado intentelo denuevo ','error');
 							}
-							if(message == '1')
+							if(messageReport == '1')
 							{
 								swal('EXITO','Registrado con exito, se envio un mensaje de confirmacion a su correo.','success');
 							}
-							if(message == '2')
+							if(messageReport == '2')
 							{
 								swal('ERROR','El email insertado ya esta en uso','error');
 							}

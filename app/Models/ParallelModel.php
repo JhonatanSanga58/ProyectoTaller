@@ -24,6 +24,16 @@ class ParallelModel extends Model
         $query = $builder->get();
         return $query->getResult();
     }
+    public function SelectByCode($code)
+    {
+        $builder = $this->db->table('parallel');
+        $builder->select("*");
+        $builder->where('code', $code);
+        $builder->where('state', 1);
+        $builder->orderBy('create_date','asc');
+        $query = $builder->get();
+        return $query;
+    }
 
     /**
      * ---

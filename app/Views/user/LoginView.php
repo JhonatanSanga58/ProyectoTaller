@@ -83,7 +83,7 @@
 		}
         if(messageReport == '1')
 		{
-			swal('REGISTRO CON EXITO','Se envio un mensaje a su correo electronico por favor reviselo para poder continuar con la recuperacion de su contraseña','success');
+			swal('MENSAJE ENVIADO CON EXITO','Se envio un mensaje a su correo electronico por favor reviselo para poder continuar con la recuperacion de su contraseña','success');
 		}
         if(messageReport == '2')
 		{
