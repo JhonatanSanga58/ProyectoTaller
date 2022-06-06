@@ -4,6 +4,7 @@ namespace App\Controllers;
 use App\Models\UserModel;
 use App\Models\StudentModel;
 use CodeIgniter\Email\Email;
+use App\Models\ParallelModel;
 
 class Student extends BaseController
 {
@@ -13,14 +14,14 @@ class Student extends BaseController
         echo view('student/RegisterView');
         echo view('master/footer');
     }
-    public function register()
+    public function Register()
     {
         $session = session();
-        $Message = session('message');
+        $messageReport = session('messageReport');
         if (!$session->has('role')) 
         {
             $data = [
-                "message" => $Message
+                "messageReport" => $messageReport
             ];
         	echo view('master/header');
             echo view('student/RegisterView', $data);
@@ -32,7 +33,7 @@ class Student extends BaseController
             return redirect()->to($url);
         }
     }
-    public function registerModel()
+    public function RegisterModel()
     {
         $session = session();
 
@@ -82,18 +83,18 @@ class Student extends BaseController
                         echo "no";*/
                     $mail->send();
                     $url = base_url('public/student/register');
-                    return redirect()->to($url)->with('message','1');
+                    return redirect()->to($url)->with('messageReport','1');
                 }
                 else
                 {
                     $url = base_url('public/student/register');
-                    return redirect()->to($url)->with('message','0');
+                    return redirect()->to($url)->with('messageReport','0');
                 }
             }
             else
             {
                 $url = base_url('public/student/register');
-                return redirect()->to($url)->with('message','2');
+                return redirect()->to($url)->with('messageReport','2');
             }
 
             
@@ -103,6 +104,65 @@ class Student extends BaseController
             $url = base_url('public/');
             return redirect()->to($url);
         }
-        
     } 
+    public function GradesAndExams()
+    {
+        $session = session();
+        $messageReport = session('messageReport');
+        if ($session->has('role')) 
+        {
+            $data = [
+                "messageReport" => $messageReport
+            ];
+        	echo view('master/header');
+            echo view('student/parallelView',$data);
+            echo view('master/footer');
+        }
+        else 
+        {
+            $url = base_url('public');
+            return redirect()->to($url);
+        }
+        
+    }
+    public function RegisterParallel()
+    {
+        $session = session();
+        if($session->has('role') && $session->get('role') == '2')
+        {
+            $code = $this->request->getPost('code');
+
+            $parallelModel = new ParallelModel();
+            $studentModel = new StudentModel(); 
+            $studentId = $session->get('id');
+            $dataParallel = $parallelModel->SelectByCode($code);
+            if ($dataParallel->getResult())
+            {
+                $parallelId;
+                foreach ($dataParallel->getResult() as $row) 
+                {
+                    $parallelId = $row->parallel_id;
+                }
+               
+                $Response =  $studentModel->InsertStudentParallel($studentId, $parallelId);
+                if ($Response > 0 )
+                {
+                    $url = base_url('public/student/gradesandexams');
+                    return redirect()->to($url)->with('messageReport','1');
+                }
+            }
+            else
+            {
+                $url = base_url('public/student/gradesandexams');
+                return redirect()->to($url)->with('messageReport','0');
+            }
+            
+        }
+        else
+        {
+            $url = base_url('public/');
+            return redirect()->to($url);
+        }
+        
+    }
 }

@@ -124,6 +124,15 @@ class UserModel extends Model
         }
         return $res;
     }
+    /**
+     * ---
+     * Update
+     * ---
+     * Update password for new password
+     * 
+     *  @param string $key
+     *  @param string $password
+     */
     public function UpdatePassword($key,$password)
     {
         $builder = $this->db->table('user');

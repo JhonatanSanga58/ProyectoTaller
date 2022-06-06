@@ -56,9 +56,27 @@ class User extends BaseController
                         $StudentModel = new StudentModel();
                         $dataStudent = $StudentModel->SelectById($row->user_id);
                         if ($dataTeacher->getResult())
+                        {
                             $session->set('role', 1);
+                            $id;
+                            foreach ($dataTeacher->getResult() as $row) 
+                            {
+                                $id = $row->teacher_id;
+                            }
+                            $session->set('id', $id);
+                        }
+                            
                         if ($dataStudent->getResult())
+                        {
                             $session->set('role', 2);
+                            $id;
+                            foreach ($dataStudent->getResult() as $row) 
+                            {
+                                $id = $row->student_id;
+                            }
+                            $session->set('id', $id);
+                        }
+                            
                     }
                 }
                 if($session->get('role') == '1')
@@ -68,7 +86,7 @@ class User extends BaseController
                 }
                 else
                 {
-                    $url = base_url('public/');
+                    $url = base_url('public/student/gradesAndExams');
                     return redirect()->to($url);
                 }
                 

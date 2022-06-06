@@ -42,4 +42,14 @@ class StudentModel extends Model
         $query = $builder->insert($data);
         return $query;
     }
+    public function InsertStudentParallel($studentId, $parallelId)
+    {
+        $builder = $this->db->table('student_parallel');
+        $data = [
+            'student_id' => $studentId,
+            'parallel_id' => $parallelId,
+        ];
+        $query = $builder->insert($data);
+        return $query;
+    }
 }
