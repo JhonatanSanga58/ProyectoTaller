@@ -22,7 +22,7 @@ class StudentModel extends Model
         $query = $builder->get();
         return $query;
     }
-    
+
     /**
      * ---
      * Insert
@@ -51,5 +51,23 @@ class StudentModel extends Model
         ];
         $query = $builder->insert($data);
         return $query;
+    }
+
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns the parallel students
+     * 
+     * @param int $id
+     */
+    public function SelectByParallelId($id)
+    {
+        $builder = $this->db->table('student_parallel SP');
+        $builder->select("U.user_id, CONCAT(U.user_first_surname,' ',IFNULL(U.user_second_surname,''),' ',U.user_name) AS name");
+        $builder->join("user U", "U.user_id=SP.student_id", "inner");
+        $builder->where('SP.parallel_id', $id);
+        $query = $builder->get();
+        return $query->getResult();
     }
 }
