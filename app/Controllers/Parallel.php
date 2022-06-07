@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\GradeModel;
 use App\Models\ParallelModel;
+use App\Models\ExamModel;
 use Config\App;
 
 class Parallel extends BaseController
@@ -30,6 +31,36 @@ class Parallel extends BaseController
             $data['grades'] = $list;
             echo view('master/header');
             echo view('grade/GradesView', $data);
+            echo view('master/footer');
+        } else {
+            $url = base_url('public/');
+            return redirect()->to($url);
+        }
+    }
+    //creo que no estoy usando este REVISAR :v
+    public function SelectParallelExam()
+    {
+        $session = session();
+        if ($session->has('role') && $session->get('role') == '2') {
+
+            $gradeModel = new GradeModel();
+            $parallelModel = new ParallelModel();
+            $examModel = new ExamModel();
+
+            $list = [];
+            $parallels = $parallelModel->SelectByStudent($session->get('id'));
+            foreach ($parallels as $row) {
+                $exams = $examModel->SelectByIdParallel($row->parallel_id);
+                $parallels = [
+                    'name' => $row->name,
+                    'id' => $row->parallel_id,
+                    'examen' => $exams
+                ];
+                array_push($list, $parallels);
+            }
+            $data['parallels'] = $list;
+            echo view('master/header');
+            echo view('student/parallelView', $data);
             echo view('master/footer');
         } else {
             $url = base_url('public/');
