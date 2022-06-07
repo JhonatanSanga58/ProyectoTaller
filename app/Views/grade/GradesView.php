@@ -54,27 +54,28 @@
                                             <li>
                                                 <p class="dropdown-item" onclick="changeVal('g', '<?php echo $row['id']; ?>')" data-bs-toggle="modal" data-bs-target="#confirmationDelete">Eliminar</p>
                                             </li>
+                                            <li>
+                                                <p class="dropdown-item" onclick="changeValParallel('<?php echo $row['id']; ?>', '<?php echo $row['name']; ?>')" data-bs-toggle="modal" data-bs-target="#newParallel">Nuevo paralelo</p>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </td>
-                            <!--<td>
-                                <form action="" method="POST" target="_self">
-                                    <input type="hidden" value="<?php echo $row['id']; ?>" name="val">
-                                    <button type="submit" class="btn btn-danger">
-                                        Eliminar
-                                    </button>
-                                </form>
-                            </td>-->
                         </tr>
                         <?php
                         foreach ($row['parallels'] as $parallel) {
                         ?>
                             <tr>
                                 <td>
-                                    <p id="pp<?php echo $parallel->parallel_id; ?>">
-                                        <?php echo $parallel->name; ?>
-                                    </p>
+                                    <form id="pp<?php echo $parallel->parallel_id; ?>" style="margin-left: 20px;" action="<?php echo base_url("public/parallel") ?>" method="post" target="_self">
+                                        <input type="hidden" value="<?php echo $parallel->parallel_id; ?>" name="val">
+                                        <input type="hidden" value="<?php echo $parallel->name; ?>" name="name">
+                                        <button class="btn btn-white text-primary" type="submit">
+                                            <?php echo $parallel->name; ?>
+                                        </button>
+                                    </form>
+
+                                    </a>
                                     <form style="display: none;" id="fp<?php echo $parallel->parallel_id; ?>" action="<?php echo base_url('/public/parallel/UpdateParallel'); ?>" method="POST" target="_self">
                                         <input type="hidden" value="<?php echo $parallel->parallel_id; ?>" name="val">
                                         <input type="text" class="form-control" name="name" value="<?php echo $parallel->name; ?>" required>
@@ -113,6 +114,12 @@
         </div>
     </div>
 </div>
+
+<style>
+    .dropdown-menu li p {
+        cursor: pointer;
+    }
+</style>
 <script>
     function display(id) {
         var form = document.getElementById("f" + id);
@@ -133,6 +140,11 @@
             document.getElementById("deleteform").action = "<?php echo base_url('/public/parallel/DeleteParallel'); ?>";
         document.getElementById("valId").value = id;
     }
+
+    function changeValParallel(id, name) {
+        document.getElementById("titleParallel").innerHTML = 'Nuevo paralelo para "' + name + '"';
+        document.getElementById("valIdPar").value = id;
+    }
 </script>
 
 <div class="modal" id="confirmationDelete" tabindex="-1" role="dialog" data-bs-backdrop="static">
@@ -146,6 +158,29 @@
                     <input type="hidden" id="valId" value="0" name="val">
                     <button type="submit" class="btn btn-danger">
                         Eliminar
+                    </button>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="newParallel" tabindex="-1" role="dialog" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="titleParallel">Nuevo paralelo para </h5>
+            </div>
+            <form id="deleteform" action="<?php echo base_url('/public/parallel/CreateParallel'); ?>" method="POST" target="_self">
+                <div class="modal-body d-flex justify-content-center">
+                    <input type="hidden" id="valIdPar" value="0" name="val">
+                    <input class="form-control" type="text" name="name" required>
+                    <button type="submit" class="btn btn-success">
+                        Confirmar
                     </button>
                 </div>
             </form>

@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\GradeModel;
 use App\Models\ParallelModel;
+use App\Models\StudentModel;
+use App\Models\ExamModel;
 use Config\App;
 
 class Parallel extends BaseController
@@ -13,24 +15,17 @@ class Parallel extends BaseController
         $session = session();
         if ($session->has('role') && $session->get('role') == '1') {
 
-            $gradeModel = new GradeModel();
-            $parallelModel = new ParallelModel();
+            $studentModel = new StudentModel();
+            $examModel = new ExamModel();
 
-            $list = [];
-            $grades = $gradeModel->SelectById($session->get('role'));
-            foreach ($grades as $row) {
-                $parallels = $parallelModel->SelectById($row->grade_id);
-                $grade = [
-                    'name' => $row->grade_name,
-                    'id' => $row->grade_id,
-                    'parallels' => $parallels
-                ];
-                array_push($list, $grade);
-            }
-            $data['grades'] = $list;
+            $id = $this->request->getPost('val');
+            $data['students'] = $studentModel->SelectByParallelId($id);
+            $data['exams'] = $examModel->SelectByParallelId($id);
+            $data['name'] = $this->request->getPost('name');
             echo view('master/header');
-            echo view('grade/GradesView', $data);
+            echo view('parallel/ParallelStudentsView', $data);
             echo view('master/footer');
+            print_r($data['exams']);
         } else {
             $url = base_url('public/');
             return redirect()->to($url);
@@ -60,6 +55,22 @@ class Parallel extends BaseController
             $parallelModel = new ParallelModel();
             $id = $this->request->getPost('val');
             $parallelModel->UnableParallel($id);
+            $url = base_url('public/grade');
+            return redirect()->to($url);
+        } else {
+            $url = base_url('public/');
+            return redirect()->to($url);
+        }
+    }
+
+    public function CreateParallel()
+    {
+        $session = session();
+        if ($session->has('role') && $session->get('role') == '1') {
+            $parallelModel = new ParallelModel();
+            $id = $this->request->getPost('val');
+            $name = $this->request->getPost('name');
+            $parallelModel->InsertParallel($name, $id);
             $url = base_url('public/grade');
             return redirect()->to($url);
         } else {

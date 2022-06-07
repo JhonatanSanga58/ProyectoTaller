@@ -34,7 +34,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => 'univalle',
+        'password' => 'Ueba-2013',
         'database' => 'db_exam',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
