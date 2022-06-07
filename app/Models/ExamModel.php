@@ -26,15 +26,22 @@ class ExamModel extends Model
         $query = $builder->get();
         return $query->getResult();
     }
-    /*public function SelectByIdParallel($id)
+         
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns the score of an exam
+     * 
+     * @param int $id
+     */
+    public function SelectScores($id)
     {
-        $builder = $this->db->table('exam');
-        $builder->select("*");
-        $builder->where('parallel_id', $id);
-        $builder->where('state', 1);
-        $builder->orderBy('create_date','desc');
+        $builder = $this->db->table('exam_score ES');
+        $builder->select("ES.score,ES.feedback, U.user_id, CONCAT(U.user_first_surname,' ',IFNULL(U.user_second_surname,''),' ',U.user_name) AS name");
+        $builder->join("user U", "U.user_id = ES.student_id", "INNER");
+        $builder->where('exam_id', $id);
         $query = $builder->get();
         return $query->getResult();
-    }*/
-
+    }
 }

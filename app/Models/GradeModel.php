@@ -20,7 +20,7 @@ class GradeModel extends Model
         $builder->select("*");
         $builder->where('teacher_id', $id);
         $builder->where('state', 1);
-        $builder->orderBy('create_date','desc');
+        $builder->orderBy('create_date', 'desc');
         $query = $builder->get();
         return $query->getResult();
     }

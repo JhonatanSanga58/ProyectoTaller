@@ -20,7 +20,7 @@ class ParallelModel extends Model
         $builder->select("*");
         $builder->where('grade_id', $id);
         $builder->where('state', 1);
-        $builder->orderBy('create_date','asc');
+        $builder->orderBy('create_date', 'asc');
         $query = $builder->get();
         return $query->getResult();
     }
@@ -68,6 +68,9 @@ class ParallelModel extends Model
      * Returns parallels of code 
      * 
      * @param int $id
+     * Returns parallel that has the code
+     * 
+     * @param int $code
      */
     public function SelectByCode($code)
     {
@@ -75,7 +78,7 @@ class ParallelModel extends Model
         $builder->select("*");
         $builder->where('code', $code);
         $builder->where('state', 1);
-        $builder->orderBy('create_date','asc');
+        $builder->orderBy('create_date', 'asc');
         $query = $builder->get();
         return $query;
     }
@@ -84,7 +87,7 @@ class ParallelModel extends Model
      * ---
      * Insert
      * ---
-     * Insert a new parallel into a grade
+     * Insert a new parallel into a grade and search a unique code
      * 
      * @param string $name
      * @param int $gradeId
@@ -92,12 +95,36 @@ class ParallelModel extends Model
     public function InsertParallel($name, $gradeId)
     {
         $builder = $this->db->table('parallel');
+
+        $number = random_int(1000000000, 9999999999);
+        $found = false;
+        while ($this->HasCode($number)) {
+            $number = random_int(1000000000, 9999999999);
+        }
         $data = [
             'name' => $name,
             'grade_id' => $gradeId,
+            'code' => $number
         ];
         $query = $builder->insert($data);
         return $query;
+    }
+
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns false if a parallel has the code
+     * 
+     * @param int $code
+     */
+    public function HasCode($code)
+    {
+        $builder = $this->db->table('parallel');
+        $builder->select("*");
+        $builder->where('code', $code);
+        $query = $builder->get();
+        return $query->getResult();
     }
 
     /**

@@ -17,7 +17,7 @@ class Grade extends BaseController
             $parallelModel = new ParallelModel();
 
             $list = [];
-            $grades = $gradeModel->SelectById($session->get('role'));
+            $grades = $gradeModel->SelectById($session->get('id'));
             foreach ($grades as $row) {
                 $parallels = $parallelModel->SelectById($row->grade_id);
                 $grade = [
