@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'root',
+        'password' => 'Ueba-2013',
+        'database' => 'db_exam',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
