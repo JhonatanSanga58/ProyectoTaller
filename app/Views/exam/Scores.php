@@ -1,11 +1,11 @@
 <div class="container">
     <?php
 
-    foreach ($scores as $row) {
-        $i = 0; ?>
-        <form action="<?php echo base_url("public/exam/UpdateScore") ?>" method="post" id="<?php echo $i ?>"></form>
+    $i = 0;
+    foreach ($scores as $row) { ?>
+        <form action="<?php echo base_url("public/exam/UpdateScore") ?>" method="POST" id="form<?php echo $i ?>"></form>
     <?php
-        $i++;
+        $i = $i + 1;
     }
     ?>
     <div class="row">
@@ -24,35 +24,38 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <?php
-                            foreach ($scores as $row) {
-                                $i = 0;
-                            ?>
+                        <?php
+                        $i = 0;
+                        foreach ($scores as $row) {
+                        ?>
+                            <tr>
                                 <td>
                                     <p><?php echo $row->name ?></p>
                                 </td>
                                 <td>
                                     <p id="numP<?php echo $row->user_id ?>"><?php echo $row->score ?></p>
-                                    <input type="number" value="<?php echo $row->score ?>" name="score" class="form-control" style="display: none;" id="num<?php echo $row->user_id ?>" form="<?php echo $i ?>">
-                                    <input type="hidden" value="<?php echo $row->user_id ?>" name="val">
+                                    <input type="number" value="<?php echo $row->score ?>" name="score" class="form-control" style="display: none;" id="num<?php echo $row->user_id ?>" form="form<?php echo $i ?>">
+                                    <input type="hidden" value="<?php echo $row->user_id ?>" name="valEst" form="form<?php echo $i ?>">
+                                    <input type="hidden" value="<?php echo $id ?>" name="valExam" form="form<?php echo $i ?>">
                                 </td>
                                 <td>
                                     <p id="feedP<?php echo $row->user_id ?>">
                                         <?php echo $row->feedback ?>
                                     </p>
-                                    <input type="text" value="<?php echo $row->feedback ?>" name="feedback" class="form-control" style="display: none;" id="feed<?php echo $row->user_id ?>" form="<?php echo $i ?>">
+                                    <input type="text" value="<?php echo $row->feedback ?>" name="feedback" class="form-control" style="display: none;" id="feed<?php echo $row->user_id ?>" form="form<?php echo $i ?>">
                                 </td>
                                 <td>
                                     <button class="btn btn-success" onclick="display('<?php echo $row->user_id ?>')" id="btnEdit<?php echo $row->user_id ?>">
                                         Editar
                                     </button>
-                                    <button style="display: none;" class="btn btn-primary" type="submit" id="btn<?php echo $row->user_id ?>" form="<?php echo $i ?>">
+                                    <button style="display: none;" class="btn btn-primary" type="submit" id="btn<?php echo $row->user_id ?>" form="form<?php echo $i ?>">
                                         Confirmar
                                     </button>
                                 </td>
-                            <?php
-                            } ?>
+                            </tr>
+                        <?php
+                            $i = $i + 1;
+                        } ?>
                         </tr>
                     </tbody>
                 </table>
