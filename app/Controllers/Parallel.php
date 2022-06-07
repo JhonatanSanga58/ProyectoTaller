@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\GradeModel;
 use App\Models\ParallelModel;
+use App\Models\StudentModel;
 use App\Models\ExamModel;
 use Config\App;
 

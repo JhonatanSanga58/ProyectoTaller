@@ -10,23 +10,19 @@ class ExamModel extends Model
      * ---
      * Select
      * ---
-     * Returns the enabled exams to which a student belongs
+     * Returns the exams of a parallel
      * 
      * @param int $id
      */
-    public function SelectByIdParallel($id)
+    public function SelectByParallelId($id)
     {
-        $builder = $this->db->table('exam_score ES');
-        $builder->select("ES.score, ES.feedback,E.exam_name, ES.student_id, ES.exam_id");
-        $builder->join("exam E","E.exam_id=ES.exam_id","RIGHT");
-        //$builder->join("exam_score ES","E.exam.id=ES.exam_id","INNER");
-        $builder->where('E.parallel_id', $id);
-        //$builder->where('ES.state', 1);
-        $builder->orderBy('E.create_date','desc');
+        $builder = $this->db->table('exam');
+        $builder->select("*");
+        $builder->where('parallel_id', $id);
         $query = $builder->get();
         return $query->getResult();
     }
-         
+
     /**
      * ---
      * Select
@@ -43,5 +39,23 @@ class ExamModel extends Model
         $builder->where('exam_id', $id);
         $query = $builder->get();
         return $query->getResult();
+    }
+
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns the score of an exam
+     * 
+     * @param int $id
+     */
+    public function Updatescore($idEst, $idExam, $score, $feedback)
+    {
+        $builder = $this->db->table('exam_score');
+        $builder->set('score', $score);
+        $builder->set('feedback', $feedback);
+        $builder->where('student_id', $idEst);
+        $builder->where('exam_id', $idExam);
+        return $builder->update();
     }
 }
