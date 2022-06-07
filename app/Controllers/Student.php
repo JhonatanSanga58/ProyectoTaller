@@ -5,6 +5,7 @@ use App\Models\UserModel;
 use App\Models\StudentModel;
 use CodeIgniter\Email\Email;
 use App\Models\ParallelModel;
+use App\Models\ExamModel;
 
 class Student extends BaseController
 {
@@ -111,8 +112,32 @@ class Student extends BaseController
         $messageReport = session('messageReport');
         if ($session->has('role')) 
         {
-            $data = [
-                "messageReport" => $messageReport
+           // $gradeModel = new GradeModel();
+            $parallelModel = new ParallelModel();
+            $examModel = new ExamModel();
+
+            $list = [];
+            $parallels = $parallelModel->SelectByStudent($session->get('id'));
+            foreach ($parallels as $row) {
+                $exams = $examModel->SelectByIdParallel($row->parallel_id);
+                $dataParallel = $parallelModel->SelectParallelById($row->parallel_id);
+                $name;
+                foreach($dataParallel as $row2)
+                {
+                    $name = $row2->name;
+                    
+                }
+               $parallels = [
+                    'name' => $name,
+                    'id' => $row->parallel_id,
+                    'examen' => $exams
+                ];
+                array_push($list, $parallels);
+            }
+           // $data['parallels'] = $list;
+           $data = [
+                "messageReport" => $messageReport,
+                "parallels" => $list
             ];
         	echo view('master/header');
             echo view('student/parallelView',$data);

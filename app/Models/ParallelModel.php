@@ -28,6 +28,46 @@ class ParallelModel extends Model
      * ---
      * Select
      * ---
+     * Returns parallels of student 
+     * 
+     * @param int $id
+     */
+    public function SelectByStudent($id)
+    {
+        $builder = $this->db->table('student_parallel');
+        $builder->select("*");
+        $builder->where('student_id', $id);
+        $builder->where('state', 1);
+        $builder->orderBy('create_date','asc');
+        $query = $builder->get();
+        return $query->getResult();
+    }
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns parallel by id
+     * 
+     * @param int $id
+     */
+    public function SelectParallelById($id)
+    {
+        $builder = $this->db->table('parallel');
+        $builder->select("*");
+        $builder->where('parallel_id', $id);
+        $builder->where('state', 1);
+        $builder->orderBy('create_date');
+        $query = $builder->get();
+        return $query->getResult();
+    }
+
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns parallels of code 
+     * 
+     * @param int $id
      * Returns parallel that has the code
      * 
      * @param int $code
