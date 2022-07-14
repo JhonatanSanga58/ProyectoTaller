@@ -115,11 +115,11 @@ class Student extends BaseController
            // $gradeModel = new GradeModel();
             $parallelModel = new ParallelModel();
             $examModel = new ExamModel();
-
+ 
             $list = [];
             $parallels = $parallelModel->SelectByStudent($session->get('id'));
             foreach ($parallels as $row) {
-                $exams = $examModel->SelectByIdParallel($row->parallel_id);
+                $exams = $examModel->SelectByIdParallel($row->parallel_id,$session->get('id'));
                 $dataParallel = $parallelModel->SelectParallelById($row->parallel_id);
                 $name;
                 foreach($dataParallel as $row2)

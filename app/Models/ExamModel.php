@@ -22,6 +22,28 @@ class ExamModel extends Model
         $query = $builder->get();
         return $query->getResult();
     }
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns the exams of a parallel adn student
+     * 
+     * @param int $exam_id
+     * @param int $student_id
+     */
+    public function SelectByIdParallel($exam_id,$student_id)
+    {
+        $builder = $this->db->table('exam_score ES');
+        $builder->select("ES.score, ES.feedback,E.exam_name, ES.student_id, ES.exam_id");
+        $builder->join("exam E","E.exam_id=ES.exam_id","RIGHT");
+        //$builder->join("exam_score ES","E.exam.id=ES.exam_id","INNER");
+        $builder->where('E.parallel_id', $exam_id);
+        $builder->where('ES.student_id', $student_id);
+        //$builder->where('ES.state', 1);
+        $builder->orderBy('E.create_date','desc');
+        $query = $builder->get();
+        return $query->getResult();
+    }
 
     /**
      * ---
